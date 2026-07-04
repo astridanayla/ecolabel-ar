@@ -1,0 +1,452 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (494.40.1)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+reorder rootPrims = ["Root", "Text_Black", "Text_Gray", "Glass", "Glass_1", "Glass_2", "Red", "Blue", "Green", "Red", "Blue", "Green"]
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Main_Screen", "Loading", "SVGMat_1", "SVGMat_2", "SVGMat_3", "SVGMat_4", "SVGMat_5", "SVGMat_6", "SVGMat_7", "SVGMat_8", "SVGMat_9", "SVGMat_10", "SVGMat_11", "SVGMat_12", "Sustainable", "Title", "Button", "Transform", "SpotLight", "Carbon", "Decompose"]
+    def Xform "Loading" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["Curve_1", "Curve_2", "Curve_3", "Curve_4", "Curve_5", "Curve_6", "Curve_7", "Curve_8", "Curve_9", "Curve_10", "Curve_11", "Curve_12", "SVGMat_018"]
+        float3 xformOp:scale = (4, 4, 4)
+        float3 xformOp:translate = (-0.3, -0.2, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "Curve_1" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve/Curve_012>
+        )
+        {
+            rel material:binding = </SVGMat_1> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_2" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_001/Curve_013>
+        )
+        {
+            rel material:binding = </SVGMat_2> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_3" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_002/Curve_014>
+        )
+        {
+            rel material:binding = </SVGMat_3> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_4" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_003/Curve_015>
+        )
+        {
+            rel material:binding = </SVGMat_4> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_5" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_004/Curve_016>
+        )
+        {
+            rel material:binding = </SVGMat_5> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_6" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_005/Curve_017>
+        )
+        {
+            rel material:binding = </SVGMat_6> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_7" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_006/Curve_018>
+        )
+        {
+            rel material:binding = </SVGMat_7> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_8" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_007/Curve_019>
+        )
+        {
+            rel material:binding = </SVGMat_8> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_9" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_008/Curve_020>
+        )
+        {
+            rel material:binding = </SVGMat_9> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_10" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_009/Curve_021>
+        )
+        {
+            rel material:binding = </SVGMat_10> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_11" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_010/Curve_022>
+        )
+        {
+            rel material:binding = </SVGMat_11> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "Curve_12" (
+            active = true
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            references = @Loading.usdz@</Curve_011/Curve_023>
+        )
+        {
+            rel material:binding = </SVGMat_12> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+}
+
+def "SVGMat_1" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_012>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.12960778, 0.13558936, 0.15699218) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.12960778, 0.13558936, 0.15699218) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_2" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_013>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.17823875, 0.18695119, 0.21882813) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.17823875, 0.18695119, 0.21882813) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_3" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_014>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.2268341, 0.23908366, 0.28326172) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.2268341, 0.23908366, 0.28326172) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_4" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_015>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.276474, 0.29440138, 0.3481836) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.276474, 0.29440138, 0.3481836) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_5" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_016>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.34897056, 0.37547982, 0.4433789) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.34897056, 0.37547982, 0.4433789) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_6" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_017>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.38667363, 0.41828355, 0.5) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.38667363, 0.41828355, 0.5) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_7" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_018>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.47790304, 0.4994099, 0.56427735) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.46027657, 0.483979, 0.56427735) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_8" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_019>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.55375963, 0.5704564, 0.6642383) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.56948596, 0.5767545, 0.6642383) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_9" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_020>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.63365126, 0.65165466, 0.76607424) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.6698179, 0.68870014, 0.76607424) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def "SVGMat_10" (
+    active = true
+    references = @Loading.usdz@</_materials/SVGMat_021>
+)
+{
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+
+    over "previewShader"
+    {
+        color3f inputs:diffuseColor = (0.77168584, 0.7926935, 0.895) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.6572469, 0.6666719, 0.76607424) (
+            colorSpace = "srgb_displayp3"
+        )
+    }
+}
+
+def Material "SVGMat_11"
+{
+    token cullMode = "unspecified" (
+        allowedTokens = ["unspecified", "none", "front", "back"]
+    )
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+    token outputs:surface.connect = </SVGMat_11/UsdPreviewSurface.outputs:surface>
+    float2 ui:nodegraph:node:pos = (60, 60)
+    int ui:nodegraph:node:stackingOrder = 3
+
+    def Shader "UsdPreviewSurface"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:clearcoat = 0.15
+        float inputs:clearcoatRoughness = 0.1
+        color3f inputs:diffuseColor = (0.8011199, 0.8142081, 0.90083987) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.72055453, 0.74023217, 0.83595705) (
+            colorSpace = "srgb_displayp3"
+        )
+        float inputs:opacity = 1
+        float inputs:roughness = 0.05
+        token outputs:surface
+    }
+}
+
+def Material "SVGMat_12"
+{
+    token cullMode = "unspecified" (
+        allowedTokens = ["unspecified", "none", "front", "back"]
+    )
+    token outputs:mtlx:surface
+    token outputs:realitykit:vertex
+    token outputs:surface.connect = </SVGMat_12/UsdPreviewSurface.outputs:surface>
+    float2 ui:nodegraph:node:pos = (80, 80)
+    int ui:nodegraph:node:stackingOrder = 4
+
+    def Shader "UsdPreviewSurface"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        float inputs:clearcoat = 0.15
+        float inputs:clearcoatRoughness = 0.1
+        color3f inputs:diffuseColor = (0.85272086, 0.86225915, 0.9673633) (
+            colorSpace = "srgb_displayp3"
+        )
+        color3f inputs:emissiveColor = (0.72055453, 0.74023217, 0.83595705) (
+            colorSpace = "srgb_displayp3"
+        )
+        float inputs:opacity = 1
+        float inputs:roughness = 0.05
+        token outputs:surface
+    }
+}
+
