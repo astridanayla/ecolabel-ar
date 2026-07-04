@@ -42,11 +42,11 @@ The result is a lightweight, glanceable experience: no menus to dig through, jus
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/astridanayla/ecolabel-ar.git
 
 # 2. Open the project in Xcode
-cd <repo-name>
-open EcoImpactLabel.xcodeproj   # or the .xcworkspace, if present
+cd ecolabel-ar
+open EcoLabelAR.xcodeproj   # or the .xcworkspace, if present
 
 # 3. Select your connected iOS device as the build target
 #    (AR requires a physical device)
@@ -79,15 +79,6 @@ Ideas for extending the prototype:
 - [ ] Let users tap the label to see a deeper breakdown
 - [ ] Save and compare items over time
 - [ ] Support for object detection beyond predefined models
-
-## 👤 Author
-
-**Astrida Nayla**
-
-- 📧 [design.astrida@gmail.com](mailto:design.astrida@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/astrida-nayla/)
-- ✍️ [Medium](https://astridanayla.medium.com/)
-- 🌐 [Portfolio](https://mieuxmoi.framer.website/)
 
 ---
 
