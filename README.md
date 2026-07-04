@@ -6,6 +6,8 @@
 
 🔗 **Live case study:** [mieuxmoi.framer.website/eco-impact-label](https://mieuxmoi.framer.website/eco-impact-label)
 
+> ⚠️ **Prototype only.** This is a visual/interaction proof-of-concept. There is **no backend, database, or real logic behind it yet** — the impact data and sustainable alternatives shown are hardcoded/placeholder content used to demonstrate the AR experience and UX, not live calculations.
+
 ---
 
 ## ✨ Overview
