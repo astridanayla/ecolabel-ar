@@ -14,12 +14,14 @@ Sustainability information usually lives far from the moment of choice — burie
 
 The result is a lightweight, glanceable experience: no menus to dig through, just an impact summary and an actionable alternative floating in place above the item.
 
+
 ## 🎯 Features
 
 - **Floating AR label** — an environmental-impact tag anchors above a detected household item and stays locked in 3D space as you move.
 - **Impact at a glance** — surfaces the item's environmental footprint in a compact, readable format.
 - **Sustainable alternative** — pairs each item with a greener swap so the takeaway is actionable, not just informational.
 - **Spatial, in-context UX** — information appears exactly where the decision happens rather than in a separate screen.
+
 
 ## 🛠️ Built With
 
@@ -29,6 +31,7 @@ The result is a lightweight, glanceable experience: no menus to dig through, jus
 | **Reality Composer** | AR scene authoring, anchoring, and behaviors |
 | **Blender** | 3D modeling and assets for the AR scene |
 
+
 ## 📱 Requirements
 
 - **iOS device with ARKit support** (an A-series chip and rear camera)
@@ -36,7 +39,6 @@ The result is a lightweight, glanceable experience: no menus to dig through, jus
 - **iOS deployment target** compatible with your project settings
 - A physical device — AR features can't be fully tested in the Simulator
 
-> ℹ️ Adjust the specifics above to match your project's actual minimum versions.
 
 ## 🚀 Getting Started
 
@@ -57,18 +59,23 @@ open EcoLabelAR.xcodeproj   # or the .xcworkspace, if present
 
 Once installed, launch the app and point your device at a supported household item to see its eco impact label appear.
 
+
 ## 📂 Project Structure
 
 ```
-EcoImpactLabel/
-├── App/                 # SwiftUI app entry point & views
-├── AR/                  # Reality Composer scenes & AR logic
-├── Models/              # 3D assets exported from Blender
-├── Resources/           # Assets, icons, sample data
-└── README.md
+ecolabel-ar/
+├── EcoLabelAR.xcodeproj/        # Xcode project file
+├── EcoLabelAR/                  # Main app source
+│   ├── EcoLabelARApp.swift      # App entry point (SwiftUI @main)
+│   ├── ContentView.swift        # Root view hosting the AR experience
+│   ├── Experience.rcproject     # Reality Composer scene (AR anchors & behaviors)
+│   ├── Assets.xcassets/         # App icons, colors, images
+│   ├── Info.plist               # App configuration (camera permission, etc.)
+│   └── Preview Content/         # SwiftUI preview assets
+├── EcoLabelARTests/             # Unit tests
+└── EcoLabelARUITests/           # UI tests
 ```
 
-> ℹ️ This is a suggested layout — update it to reflect the actual folders in your repo.
 
 ## 🧭 Roadmap
 
